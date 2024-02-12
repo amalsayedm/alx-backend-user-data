@@ -28,4 +28,6 @@ class Auth:
 
     def authorization_header(self, request=None) -> str:
         """Gets the authorization header field from the request."""
+        if request is not None:
+            return request.headers.get('Authorization', None)
         return None
