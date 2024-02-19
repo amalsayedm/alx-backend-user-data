@@ -11,4 +11,4 @@ from models.user import User
 class SessionAuth(Auth):
     """Session authentication class.
     """
-    
+    user_id_by_session_id = {}
